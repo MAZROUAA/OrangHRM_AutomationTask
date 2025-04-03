@@ -53,6 +53,7 @@ public class AddingAndDeletingUsers extends TestBase {
     @When("the user add new user")
     public void the_user_add_new_user() throws InterruptedException {
         adminObj.addUser(userRole,userStatus,employeeName,userName,passWord,confirmPassword);
+        Thread.sleep(6000);
     }
     @Then("the number of records will increase by one and user will be found by search")
     public void the_number_of_records_will_increase_by_one_and_user_will_be_found_by_search() throws InterruptedException {
@@ -61,6 +62,8 @@ public class AddingAndDeletingUsers extends TestBase {
 
         adminObj.SearchForUserByUserName(userName);
 
+        Thread.sleep(4000);
+
         int numberOfRecordsAfterSearch =adminObj.getNumberOfRecords();
         Assert.assertEquals(numberOfRecordsAfterSearch,1);
 
@@ -68,14 +71,18 @@ public class AddingAndDeletingUsers extends TestBase {
 
     }
     @When("the user Delete the new user")
-    public void the_user_delete_the_new_user() {
+    public void the_user_delete_the_new_user() throws InterruptedException {
         adminObj.DeleteUser();
+        Thread.sleep(3000);
+
     }
     @Then("the number of records will decrease by one")
-    public void the_number_of_records_will_decrease_by_one() {
+    public void the_number_of_records_will_decrease_by_one() throws InterruptedException {
         homeObj.openAdminPage();
 
         int numberOfRecordsAfterUserDeletion =adminObj.getNumberOfRecords();
+
+        Thread.sleep(2000);
 
         Assert.assertEquals(numberOfRecordsAfterUserDeletion,numberOfRecords-1);
 

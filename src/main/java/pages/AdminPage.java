@@ -96,7 +96,6 @@ public class AdminPage extends PageBase{
         //Click on save button
         WebElement SaveButton = driver.findElement(SaveButtonSelector);
         clickOnElement(SaveButton);
-        Thread.sleep(6000);
 
     }
 
@@ -116,7 +115,6 @@ public class AdminPage extends PageBase{
         WebElement SearchButton = driver.findElement(SearchButtonSelector);
         clickOnElement(SearchButton);
 
-        Thread.sleep(6000);
 
     }
 
