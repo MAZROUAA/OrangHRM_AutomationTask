@@ -1,0 +1,19 @@
+Tools and Technoligies Used:
+
+1. Selenium: A framework for automating web browsers to simulate real-user interactions for UI testing.
+2. Java version 11.0.16.1 : The programming language used to write the Selenium automation scripts and logic.
+3. Maven : A build automation tool that manages project dependencies and automates the build and testing processes.
+4. TestNG: A testing framework used for managing test execution, configurations.
+5. Cucumber: A tool for writing behavior-driven tests in natural language using Gherkin syntax.
+
+
+
+Steps For Run:
+1. Clone the repo
+2. Open the project on Intellij
+3. Put your test data in src/test/java/data/UserData.properties file
+4. Run your tests from the TestRunner class (src/test/java/Runner/TestRunner.java)
+
+Notes:
+1. You can find a demo video in /ExecutionVideo directory .
+2. i added some Thread.sleep() in the code to make the video more observable.
