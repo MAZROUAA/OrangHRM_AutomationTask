@@ -1,3 +1,5 @@
+Question 1:
+
 Tools and Technoligies Used:
 
 1. Selenium: A framework for automating web browsers to simulate real-user interactions for UI testing.
@@ -17,3 +19,8 @@ Steps For Run:
 Notes:
 1. You can find a demo video in /ExecutionVideo directory .
 2. i added some Thread.sleep() in the code to make the video more observable.
+
+
+
+Question 2:
+1. You will find 19 designed test cases with just the subject and the expected result in directory Question2/
