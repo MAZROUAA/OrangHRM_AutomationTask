@@ -1,6 +1,6 @@
 Question 1:
 
-Tools and Technoligies Used:
+Tools and Technologies Used:
 
 1. Selenium: A framework for automating web browsers to simulate real-user interactions for UI testing.
 2. Java version 11.0.16.1 : The programming language used to write the Selenium automation scripts and logic.
